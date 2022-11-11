@@ -21,7 +21,7 @@ const Signin = () => {
     }).then(res=>res.json())
     .then(data => {
       if(data.error) {
-        alert("Invalid email")
+        alert("Invalid email or Password")
       }else{
         alert("Log in successfully")
       }
