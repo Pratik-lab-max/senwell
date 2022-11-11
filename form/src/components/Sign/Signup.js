@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./Signup.css"
 
@@ -31,15 +31,15 @@ const Signup = () => {
     })
   }
 
-  const fetchData=async()=> {
-    const response = await fetch("http://localhost:5000/")
-    const data = await response.json()
-    console.log(data)
-  }
+//   const fetchData=async()=> {
+//     const response = await fetch("http://localhost:5000/")
+//     const data = await response.json()
+//     console.log(data)
+//   }
 
-  useEffect(() => {
-    fetchData()
-  })
+//   useEffect(() => {
+//     fetchData()
+//   })
 
   return (
     <>
